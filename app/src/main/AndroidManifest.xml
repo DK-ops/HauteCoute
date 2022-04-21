@@ -10,7 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HauteCoute">
         <activity
+            android:name=".OnBoarding"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen.SplashScreen3"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen.SplashScreen2"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen.SplashScreen1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
