@@ -7,4 +7,13 @@
     android:background="#3E4756"
     tools:context=".SplashScreen.SplashScreen">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="155dp"
+        android:layout_height="149dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoputih" />
 </androidx.constraintlayout.widget.ConstraintLayout>

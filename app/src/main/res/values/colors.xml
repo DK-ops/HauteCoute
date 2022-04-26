@@ -6,6 +6,11 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="blackteks">#272727</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bgapps">#3E4756</color>
+    <color name="teksnya">#C3A0A9</color>
+    <color name="Buttoneuy">#434343</color>
+    <color name="red">#FF0000</color>
+    <color name="bgapps2">#D6D8DC</color>
 </resources>

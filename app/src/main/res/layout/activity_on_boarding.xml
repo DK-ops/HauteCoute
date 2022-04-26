@@ -7,4 +7,68 @@
     android:background="@color/bgapps"
     tools:context=".OnBoarding">
 
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintDimensionRatio="1:0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoputih" />
+
+    <Button
+        android:id="@+id/btnlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#8D6C75"
+        android:fontFamily="@font/poppins"
+        android:onClick="toLog"
+        android:text="@string/masuk_ke_akun_anda"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@id/orbo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+    <ImageView
+        android:id="@+id/orbo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:contentDescription="teks or"
+        android:src="@drawable/or"
+        app:layout_constraintBottom_toTopOf="@id/btnGuest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnlog"
+        />
+
+    <Button
+        android:id="@+id/btnGuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#D6B0BA"
+        android:text="@string/masuk_sebagai_tamu"
+        android:textColor="#3E4756"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orbo"
+        app:layout_constraintVertical_bias="0.5" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

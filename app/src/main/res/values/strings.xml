@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HauteCoute</string>
+    <string name="masuk_ke_akun_anda">Masuk ke Akun Anda</string>
+    <string name="masuk_sebagai_tamu">Masuk Sebagai Tamu</string>
+    <string name="username">Username</string>
+    <string name="masuk">Masuk</string>
+    <string name="registrasi">Registrasi</string>
 </resources>
