@@ -21,7 +21,7 @@ public class OnBoarding extends AppCompatActivity {
 
     public void toLog(View view) {
         this.btnlog = btnlog;
-        Intent intent = new Intent(OnBoarding.this, LoginP.class);
+        Intent intent = new Intent(OnBoarding.this, Registrasi.class);
         startActivity(intent);
         finish();
     }

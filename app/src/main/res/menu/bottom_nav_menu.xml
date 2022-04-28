@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home1"
+        android:title="Beranda"
+        android:icon="@drawable/home" />
+    <item
+        android:id="@+id/shopbag"
+        android:title="Shipping"
+        android:icon="@drawable/shopbag" />
+    <item
+        android:id="@+id/mixMatch"
+        android:title="Mix Match"
+        android:icon="@drawable/baju" />
+    <item
+        android:id="@+id/acc"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24" />
+</menu>
