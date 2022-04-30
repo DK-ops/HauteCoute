@@ -6,33 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bgapps2"
     android:id="@+id/mainLayout"
-    tools:context=".MainActivity">
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/searchView"
-            style="@style/Widget.AppCompat.SearchView"
-            android:layout_width="348dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/customborder"
-            app:iconifiedByDefault="false"
-            app:queryHint="Cari disini" />
-
-        <ImageButton
-            android:id="@+id/imgadd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/upimage"
-            android:src="@drawable/iconadd" />
-    </LinearLayout>
+    tools:context=".NavView.MainActivity">
 
     <FrameLayout
         android:id="@+id/flFragment"

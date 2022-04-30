@@ -1,4 +1,4 @@
-package com.mobilepro.hautecoute;
+package com.mobilepro.hautecoute.Validation;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.mobilepro.hautecoute.NavView.MainActivity;
+import com.mobilepro.hautecoute.R;
 
 public class LoginP extends AppCompatActivity {
     // creating constant keys for shared preferences.

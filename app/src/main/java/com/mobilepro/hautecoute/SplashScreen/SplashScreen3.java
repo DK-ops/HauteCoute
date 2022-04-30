@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.mobilepro.hautecoute.OnBoarding;
+import com.mobilepro.hautecoute.Validation.OnBoarding;
 import com.mobilepro.hautecoute.R;
 
 import java.util.Timer;

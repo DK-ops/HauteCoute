@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgapps2"
-    tools:context=".Registrasi">
+    tools:context=".Validation.Registrasi">
 
     <!--    Pakai Material Design buat regis form.-->
 

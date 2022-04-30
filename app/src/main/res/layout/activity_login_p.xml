@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgapps2"
-    tools:context=".LoginP">
+    tools:context=".Validation.LoginP">
 
 
     <ImageView

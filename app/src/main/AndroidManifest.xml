@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HauteCoute">
         <activity
-            android:name=".Registrasi"
+            android:name=".Validation.Registrasi"
             android:exported="false" />
         <activity
-            android:name=".LoginP"
+            android:name=".Validation.LoginP"
             android:exported="false" />
         <activity
-            android:name=".OnBoarding"
+            android:name=".Validation.OnBoarding"
             android:exported="false" />
         <activity
             android:name=".SplashScreen.SplashScreen3"
@@ -28,7 +28,7 @@
             android:name=".SplashScreen.SplashScreen1"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".NavView.MainActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreen.SplashScreen"

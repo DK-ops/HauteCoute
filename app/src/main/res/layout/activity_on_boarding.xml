@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgapps"
-    tools:context=".OnBoarding">
+    tools:context=".Validation.OnBoarding">
 
 
     <ImageView
@@ -63,6 +63,7 @@
         android:text="@string/masuk_sebagai_tamu"
         android:textColor="#3E4756"
         app:cornerRadius="10dp"
+        android:onClick="toLogGuest"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
