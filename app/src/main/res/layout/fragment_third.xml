@@ -5,20 +5,50 @@
     android:layout_height="match_parent"
     android:background="@color/bgapps2"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_x="@dimen/cardview_default_radius"
+    android:layout_y="@dimen/cardview_default_radius"
+    android:id="@+id/constraintmix"
     tools:context=".NavView.ThirdFragment">
+
+
 
     <!-- TODO: Update blank fragment layout -->
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/thirdFragment"
         android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/mix_match"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
+      <LinearLayout
+          android:id="@+id/linearscrollViewMatch"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/thirdFragment"
+          android:orientation="vertical">
+
+<!--Matching Warna / Pilih Warna-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseColor"
+        android:text="@string/warna_kulit"
+        android:background="@drawable/rectmixmatch"
+        android:gravity="fill"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/for25dp"
+        android:layout_marginEnd="@dimen/for25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearscrollViewMatch" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/chipLayout"
@@ -26,9 +56,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/customborder"
         android:backgroundTint="@color/black"
+        android:layout_marginTop="@dimen/for5dp"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_marginStart="@dimen/for25dp"
+        android:layout_marginEnd="@dimen/for25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/thirdFragment">
+        app:layout_constraintTop_toBottomOf="@id/chooseColor">
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chipGroup"
@@ -40,13 +74,16 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip1"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#F1D5C0"
+                app:checkedIcon="@drawable/a1"
                 app:chipCornerRadius="0dp" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip2"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#E9C6AE"
@@ -54,6 +91,7 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip3"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#E2BFA0"
@@ -61,6 +99,7 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip4"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#EFCCA7"
@@ -68,6 +107,7 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip5"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#E0BA94"
@@ -75,6 +115,7 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip6"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#E4B694"
@@ -82,6 +123,7 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip7"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#E1B298"
@@ -89,16 +131,347 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip8"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#DDB591"
                 app:chipCornerRadius="0dp" />
 
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip9"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D8AD93"
+                app:chipCornerRadius="0dp" />
 
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip10"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#DEB489"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip11"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#DFB38E"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip12"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D8AF82"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip13"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CD9672"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip14"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#BC8258"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip15"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#B07458"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip16"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C08158"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip17"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C18056"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip18"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AF7957"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip19"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AC795D"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip20"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#946750"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip21"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#936754"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip22"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#97634B"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip23"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#875139"
+                app:chipCornerRadius="0dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip24"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#532C1D"
+                app:chipCornerRadius="0dp" />
         </com.google.android.material.chip.ChipGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+<!--Memilih Tinggi Badan-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tBadan"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins"
+        android:gravity="fill"
+        android:background="@drawable/rectmixmatch"
+        android:textColor="@color/white"
+        android:text="@string/tinggi_badan"
+        android:layout_marginStart="@dimen/for25dp"
+        android:layout_marginEnd="@dimen/for25dp"
+        android:layout_marginTop="@dimen/for5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chipLayout"/>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbLayout"
+        android:layout_marginStart="@dimen/for35dp"
+        android:layout_marginEnd="@dimen/for35dp"
+        app:layout_constraintTop_toBottomOf="@id/tBadan">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:selectionRequired="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTb1"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_140_150_cm"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTb2"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_150_160_cm"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTb3"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_160_170_cm"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTb4"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="170-180 cm"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textIsSelectable="true"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:background="@drawable/rectmixmatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BBadan"
+        android:text="@string/berat_badan"
+        android:gravity="fill"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/for25dp"
+        android:layout_marginEnd="@dimen/for25dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbLayout"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BbLayout"
+        android:layout_marginStart="@dimen/for25dp"
+        android:layout_marginEnd="@dimen/for10dp"
+        app:layout_constraintTop_toBottomOf="@id/BBadan">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:selectionRequired="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBb1"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_40_50kg"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBb2"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_50_60kg"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBb3"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_60_70kg"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBb4"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_70_80kg"
+                android:textColor="@color/white"
+                android:textIsSelectable="true"
+                android:textSize="15sp"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBb5"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_80_90kg"
+                android:textColor="@color/white"
+                android:textIsSelectable="true"
+                android:textSize="15sp"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBb6"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_90_100kg"
+                android:textColor="@color/white"
+                android:textIsSelectable="true"
+                android:textSize="15sp"
+                app:checkedIcon="@drawable/cklis"
+                app:chipBackgroundColor="@color/black"
+                app:chipCornerRadius="@dimen/cornerRadius" />
+        </com.google.android.material.chip.ChipGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/btnMatchGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Match"
+            android:backgroundTint="@color/bgapps" />
+
+      </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

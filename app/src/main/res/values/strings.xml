@@ -1,17 +1,40 @@
 <resources>
     <string name="app_name">HauteCoute</string>
+    <!--    Validasi-->
     <string name="masuk_ke_akun_anda">Masuk ke Akun Anda</string>
     <string name="masuk_sebagai_tamu">Masuk Sebagai Tamu</string>
     <string name="username">Username</string>
     <string name="masuk">Masuk</string>
     <string name="registrasi">Registrasi</string>
     <string name="upimage">upimage</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    bottom nav name string-->
     <string name="beranda">Beranda</string>
     <string name="shipping">Shipping</string>
     <string name="mix_match">Mix Match</string>
 
+    <!--Feed-->
     <string name="headcaption1"><b>Andri Idrus</b></string>
     <string name="caption1">Hai gaes aku ada rekomendasi ootd ala-ala korea nih!</string>
+
+    <!--    mix match page name string-->
+    <string name="warna_kulit"><b><i>Warna</i></b> Kulit</string>
+    <string name="tinggi_badan"><b><i>Tinggi</i></b> Badan</string>
+    <string name="berat_badan"><b><i>Berat</i></b> Badan</string>
+    <!--    Berat Badan-->
+    <string name="_40_50kg">40-50kg</string>
+    <string name="_50_60kg">50-60kg</string>
+    <string name="_60_70kg">60-70kg</string>
+    <string name="_70_80kg">70-80kg</string>
+    <string name="_80_90kg">80-90kg</string>
+    <string name="_90_100kg">90-100kg</string>
+
+    <!--    Tinggi Badan-->
+    <string name="_140_150_cm">140-150 cm</string>
+    <string name="_150_160_cm">150-160 cm</string>
+    <string name="_160_170_cm">160-170 cm</string>
+
 </resources>

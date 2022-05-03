@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HauteCoute">
         <activity
+            android:name=".MixMatchResult"
+            android:exported="false" />
+        <activity
             android:name=".Validation.Registrasi"
             android:exported="false" />
         <activity

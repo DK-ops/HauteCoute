@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="for15dp">15dp</dimen>
+    <dimen name="for25dp">25dp</dimen>
+    <dimen name="for35dp">35dp</dimen>
+    <dimen name="cornerRadius">15dp</dimen>
+    <dimen name="for10dp">10dp</dimen>
+    <dimen name="for5dp">5dp</dimen>
+</resources>
