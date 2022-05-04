@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.mobilepro.hautecoute.R;
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         }
         return false;
     }
+
+
 
 
 }

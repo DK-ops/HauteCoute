@@ -1,5 +1,6 @@
 package com.mobilepro.hautecoute.NavView;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,18 +8,32 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
+import com.mobilepro.hautecoute.MixMatchResult;
 import com.mobilepro.hautecoute.R;
 
-public class FirstFragment extends Fragment {
-
+public class FirstFragment extends Fragment implements View.OnClickListener{
+    ImageView btnimg1,btnimg2,btnimg3;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-     return inflater.inflate(R.layout.fragment_first,container, false);
+        View view1 = inflater.inflate(R.layout.fragment_first, container, false);
+        btnimg1 =  (ImageView) view1.findViewById(R.id.feed1);
+        btnimg2 = (ImageView) view1.findViewById(R.id.feed2);
+        btnimg1.setOnClickListener(this);
+        btnimg2.setOnClickListener(this);
+        return view1;
 
+    }
 
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(getActivity(), MixMatchResult.class);
+        startActivity(intent);
     }
 }

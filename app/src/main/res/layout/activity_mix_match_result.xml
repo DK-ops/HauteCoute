@@ -4,6 +4,116 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bgapps2"
     tools:context=".MixMatchResult">
+
+    <LinearLayout
+        android:id="@+id/linelayoutmixmatch"
+        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:contentDescription="backtoMix"
+            android:id="@+id/imgarrow"
+
+            android:layout_width="47dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/leftarrow" />
+
+
+    <TextView
+        style="underl"
+        android:id="@+id/thirdFragment"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/mix_match"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/for5dp"
+        android:layout_marginLeft="99dp"
+        android:textSize="28sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/for25dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:paddingStart="55dp"
+        android:paddingEnd="55dp"
+        android:text="@string/dengan_warna_kulit_tinggi_dan_berat_badanmu_inilah_rekomendasi_fashion_untukmu"
+        android:textColor="@color/black"
+        android:textSize="@dimen/for25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linelayoutmixmatch" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="316dp"
+        android:layout_height="421dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mm1"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mm1"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mm2"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mm3"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mm4"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

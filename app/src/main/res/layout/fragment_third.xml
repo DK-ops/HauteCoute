@@ -362,7 +362,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/BBadan"
         android:text="@string/berat_badan"
-        android:gravity="fill"
+        android:gravity="center"
         android:textColor="@color/white"
         android:layout_marginStart="@dimen/for25dp"
         android:layout_marginEnd="@dimen/for25dp"
@@ -381,7 +381,7 @@
         app:layout_constraintTop_toBottomOf="@id/BBadan">
 
         <com.google.android.material.chip.ChipGroup
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -464,13 +464,16 @@
                 app:chipCornerRadius="@dimen/cornerRadius" />
         </com.google.android.material.chip.ChipGroup>
     </androidx.constraintlayout.widget.ConstraintLayout>
-        <Button
-            android:id="@+id/btnMatchGo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Match"
-            android:backgroundTint="@color/bgapps" />
+
+          <Button
+              android:id="@+id/btnMatchGo"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:backgroundTint="@color/bgapps"
+              android:text="Match"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent" />
 
       </LinearLayout>
 

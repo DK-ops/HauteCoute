@@ -37,4 +37,7 @@
     <string name="_150_160_cm">150-160 cm</string>
     <string name="_160_170_cm">160-170 cm</string>
 
+<!--    Mix Match Result Layout-->
+    <string name="dengan_warna_kulit_tinggi_dan_berat_badanmu_inilah_rekomendasi_fashion_untukmu">Dengan warna kulit, tinggi dan berat badanmu inilah rekomendasi fashion untukmu!</string>
+
 </resources>

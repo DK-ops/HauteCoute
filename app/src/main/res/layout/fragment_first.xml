@@ -48,6 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill"
+                android:id="@+id/feed1"
                 android:src="@drawable/first1" />
 
             <TextView
@@ -65,11 +66,12 @@
                 android:textSize="20sp" />
 
             <!--            gambar kedua-->
-            <ImageView
+            <ImageButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="fill"
                 android:layout_marginTop="55dp"
+                android:id="@+id/feed2"
                 android:src="@drawable/second" />
 
             <TextView
