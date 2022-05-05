@@ -21,6 +21,100 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:queryHint="Cari disini" />
 
+<!--View Kategori-->
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grdlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="@dimen/for25dp"
+        app:layout_constraintTop_toBottomOf="@id/searchView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+
+        <ImageButton
+            android:id="@+id/imgbtnship1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bgapps"
+            android:contentDescription="Kaos Klikable"
+            android:src="@drawable/ship1"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/imgbtnship2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bgapps"
+            android:contentDescription="Jaket Klikable"
+            android:src="@drawable/ship2"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/imgbtnship3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bgapps"
+            android:contentDescription="Kemeja Klikable"
+            android:src="@drawable/ship3"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/imgbtnship4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Dress Klikable"
+            android:src="@drawable/ship4"
+            android:backgroundTint="@color/bgapps"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/imgbtnship5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Celana Klikable"
+            android:src="@drawable/ship5"
+            android:backgroundTint="@color/bgapps"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/imgbtnship6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Sepatu Klikable"
+            android:src="@drawable/ship6"
+            app:layout_column="1"
+            android:backgroundTint="@color/bgapps"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+    </androidx.gridlayout.widget.GridLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

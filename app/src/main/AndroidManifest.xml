@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HauteCoute">
         <activity
+            android:name=".Shipping.DetailBaju1"
+            android:exported="false" />
+        <activity
+            android:name=".Shipping.ChooseClothes"
+            android:exported="false" />
+        <activity
             android:name=".MixMatchResult"
             android:exported="false" />
         <activity

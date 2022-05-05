@@ -1,12 +1,14 @@
 <resources>
     <string name="app_name">HauteCoute</string>
     <!--    Validasi-->
-    <string name="masuk_ke_akun_anda">Masuk ke Akun Anda</string>
+    <string name="masuk_ke_akun_anda">Masuk Ke Akun Anda</string>
     <string name="masuk_sebagai_tamu">Masuk Sebagai Tamu</string>
     <string name="username">Username</string>
     <string name="masuk">Masuk</string>
     <string name="registrasi">Registrasi</string>
     <string name="upimage">upimage</string>
+    <string name="lanjutkan">Lanjutkan</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -37,7 +39,13 @@
     <string name="_150_160_cm">150-160 cm</string>
     <string name="_160_170_cm">160-170 cm</string>
 
-<!--    Mix Match Result Layout-->
+    <!--    Mix Match Result Layout-->
     <string name="dengan_warna_kulit_tinggi_dan_berat_badanmu_inilah_rekomendasi_fashion_untukmu">Dengan warna kulit, tinggi dan berat badanmu inilah rekomendasi fashion untukmu!</string>
+
+<!--   detail baju-->
+    <string name="kaos_polos"><b>Kaos Polos</b></string>
+    <string name="rp_70_000">Rp. 70.000</string>
+    <string name="abu_abu_xl">Abu-abu,XL</string>
+    <string name="deskripsi">Deskripsi</string>
 
 </resources>

@@ -7,16 +7,4 @@
     android:background="@drawable/splash3"
     tools:context=".SplashScreen.SplashScreen3">
 
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="40dp"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:text="Lanjutkan"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

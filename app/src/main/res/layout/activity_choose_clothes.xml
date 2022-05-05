@@ -5,108 +5,130 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bgapps2"
-    tools:context=".MixMatchResult">
+    tools:context=".Shipping.ChooseClothes">
 
     <LinearLayout
-        android:id="@+id/linelayoutmixmatch"
+        android:id="@+id/linelayoutshipcloth"
         android:layout_width="match_parent"
         style="@style/Widget.AppCompat.Spinner.Underlined"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginBottom="@dimen/for15dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
 
         <ImageButton
             android:contentDescription="backtoMix"
-            android:id="@+id/imgarrow"
+            android:id="@+id/imgarrow1"
             android:layout_width="47dp"
             android:layout_height="35dp"
             android:layout_gravity="center"
             android:src="@drawable/leftarrow" />
-         <TextView
-            style="underl"
-            android:id="@+id/thirdFragment"
+        <TextView
+            android:id="@+id/shipcloth"
             android:layout_width="wrap_content"
             android:fontFamily="@font/poppins"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/mix_match"
+            android:text="Kaos"
             android:textColor="@color/black"
             android:layout_marginTop="@dimen/for5dp"
             android:layout_marginLeft="99dp"
             android:textSize="28sp"/>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/tv1"
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grdlayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/for25dp"
-        android:fontFamily="@font/poppins"
-        android:gravity="left"
-        android:paddingStart="55dp"
-        android:paddingEnd="55dp"
-        android:text="@string/dengan_warna_kulit_tinggi_dan_berat_badanmu_inilah_rekomendasi_fashion_untukmu"
-        android:textColor="@color/black"
-        android:textSize="@dimen/for25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linelayoutmixmatch" />
-
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="316dp"
-        android:layout_height="421dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv1">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linelayoutshipcloth">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/imgbtncloth1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mm1"
+            android:layout_weight="1"
+            android:backgroundTint="@color/bgapps"
+            android:contentDescription="Kaos Polos Klikable"
+            android:src="@drawable/bju1"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_row="0"
             app:layout_rowWeight="1" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/imgbtncloth2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mm1"
-            app:layout_column="0"
-            app:layout_columnWeight="1"
-            app:layout_gravity="fill"
-            app:layout_row="0"
-            app:layout_rowWeight="1" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/mm2"
+            android:backgroundTint="@color/bgapps"
+            android:contentDescription="Kaos Polos biru Klikable"
+            android:src="@drawable/bju2"
             app:layout_column="1"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_row="0"
             app:layout_rowWeight="1" />
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/imgbtncloth3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mm3"
+            android:backgroundTint="@color/bgapps"
+            android:contentDescription="Kaos Merah Polos Klikable"
+            android:src="@drawable/bju3"
             app:layout_column="0"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_row="1"
             app:layout_rowWeight="1" />
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/imgbtncloth4"
+            android:layout_width="181dp"
             android:layout_height="wrap_content"
-            android:src="@drawable/mm4"
+            android:backgroundTint="@color/bgapps"
+            android:contentDescription="kaos hitam Klikable"
+            android:src="@drawable/bju4"
             app:layout_column="1"
             app:layout_columnWeight="1"
             app:layout_gravity="fill"
             app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/imgbtncloth5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bgapps"
+            android:contentDescription="kaos ijo polos Klikable"
+            android:src="@drawable/bju5"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
+
+        <ImageButton
+            android:id="@+id/imgbtncloth6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/bgapps"
+            android:contentDescription="kaos oren Klikable"
+            android:src="@drawable/bju6"
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
             app:layout_rowWeight="1" />
 
 
