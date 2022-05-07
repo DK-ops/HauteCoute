@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HauteCoute">
         <activity
+            android:name=".Bookmark"
+            android:exported="false" />
+        <activity
+            android:name=".Ubah"
+            android:exported="false" />
+        <activity
+            android:name=".Akun"
+            android:exported="false" />
+        <activity
+            android:name=".Update"
+            android:exported="false" />
+        <activity
+            android:name=".Strip"
+            android:exported="false" />
+        <activity
             android:name=".Shipping.DetailBaju1"
             android:exported="false" />
         <activity

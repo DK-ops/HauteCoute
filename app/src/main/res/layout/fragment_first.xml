@@ -19,7 +19,7 @@
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchView"
             style="@style/Widget.AppCompat.SearchView"
-            android:layout_width="348dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/customborder"
             app:iconifiedByDefault="false"
