@@ -14,9 +14,11 @@ import android.widget.ImageView;
 
 import com.mobilepro.hautecoute.MixMatchResult;
 import com.mobilepro.hautecoute.R;
+import com.mobilepro.hautecoute.Update;
 
 public class FirstFragment extends Fragment implements View.OnClickListener{
     ImageView btnimg1,btnimg2,btnimg3;
+    ImageButton btn4;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,8 +27,18 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
         View view1 = inflater.inflate(R.layout.fragment_first, container, false);
         btnimg1 =  (ImageView) view1.findViewById(R.id.feed1);
         btnimg2 = (ImageView) view1.findViewById(R.id.feed2);
+        btn4    = (ImageButton) view1.findViewById(R.id.imgadd);
         btnimg1.setOnClickListener(this);
         btnimg2.setOnClickListener(this);
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+               Intent intent1 = new Intent(getActivity(), Update.class);
+               startActivity(intent1);
+            }
+        });
         return view1;
 
     }
@@ -36,4 +48,6 @@ public class FirstFragment extends Fragment implements View.OnClickListener{
         Intent intent = new Intent(getActivity(), MixMatchResult.class);
         startActivity(intent);
     }
+
+
 }
